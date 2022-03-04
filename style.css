@@ -1,0 +1,12 @@
+body {
+    color: rgb(241, 241, 241);
+    background-color: #0f171e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+.bg-nav-dark {
+    background-color: #0f171e;
+  }
+  
+#dropdownMenuButton {
+    color: rgb(241, 241, 241);
+  }
