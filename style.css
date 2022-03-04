@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body {
     color: rgb(241, 241, 241);
     background-color: #0f171e;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 .bg-nav-dark {
     background-color: #0f171e;
@@ -10,3 +12,7 @@ body {
 #dropdownMenuButton {
     color: rgb(241, 241, 241);
   }
+
+ul.nav li i{
+  font-size: 10px;
+}
