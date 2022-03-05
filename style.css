@@ -16,3 +16,21 @@ body {
 ul.nav li i{
   font-size: 10px;
 }
+
+
+/* carousel */
+@media (min-width: 768px) {
+  #carouselTrending .carousel-control-prev,
+  #carouselTrending .carousel-control-next {
+    width: 15px;
+    opacity: 0.4;
+  }
+
+  #carouselTrending .carousel-control-prev {
+    left: -12px;
+  }
+
+  #carouselTrending .carousel-control-next {
+    right: -12px;
+  }
+}
