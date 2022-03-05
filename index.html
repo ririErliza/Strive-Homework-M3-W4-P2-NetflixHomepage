@@ -18,10 +18,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-nav-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav-dark shadow">
         <a class="navbar-brand" href="#"><img src="assets\Netflix_Logo_RGB.png" alt="netflix video logo" height="35vh"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
+            aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -49,12 +49,12 @@
             <span class="mr-3 text-white">KIDS</span>
             <i class="bi bi-bell-fill mr-3"></i>
             <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown"
                     aria-expanded="false">
                     <img src="https://image.freepik.com/free-vector/happy-woman-girl-working-laptop-computer-vector-illustration-flat-carton_101884-118.jpg"
                      alt="avatar logo image" width="32" height="32" class="mr-1">
                 </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
@@ -64,16 +64,16 @@
         </div>
     </nav>
 
-    <ul class="nav mx-4 mt-3">
+    <ul class="nav mx-4 mt-5">
         <li class="nav-item">
             <li>
-                <a class="text-white font-weight-bold h2 mr-5" href="#">TV  Shows</a>
+                <a class="text-white font-weight-bold h2 mr-5">TV  Shows</a>
             </li>
             <li class="dropdown border border-secondary">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                    aria-expanded="false"> <span class="mr-4">Genres</span>
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown"
+                    aria-expanded="false"> <span class="mr-4 ">Genres</span>
                 </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton2">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
@@ -95,11 +95,11 @@
     
     </ul>
 
-    <main id="carousel">
+    <main id="carousel" class="pb-5 shadow">
 
-        <div class="container-fluid pt-4 pb-3">
+        <div class="container-fluid pt-3 pb-3">
             <!-- Trending Now -->
-            <div class="section-title mt-3 mt-md-4 mb-2">
+            <div class="section-title mt-5 mb-1">
                 <h5 class="d-inline-block align-baseline mb-3">Trending Now</h5>
             </div>
     
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                 
-                    <!-- carrousel item 1 -->
+                    <!-- carrousel item -->
                     <div class="carousel-item">
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 mx-n1">
                             <div class="col px-1 mb-2 mb-md-0">
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- carrousel item 2 -->
+                    
                     
                 </div>
             
@@ -168,9 +168,269 @@
                     <span class="sr-only">Next</span>
                 </button>
             </div>
+
+            <!-- Watch It Again -->
+            <div class="section-title mt-5 mb-1">
+                <h5 class="d-inline-block align-baseline mb-3">Watch it again</h5>
+            </div>
+    
+            <div id="carouselWatchAgain" class="carousel slide d-none d-sm-block" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- carrousel item active -->
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 mx-n1">
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\11.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\12.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\13.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\14.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\15.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\16.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- carrousel item -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 mx-n1">
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\17.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\18.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\1.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\2.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\3.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\4.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            
+                <button class="carousel-control-prev" type="button" data-target="#carouselWatchAgain"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+            
+                <button class="carousel-control-next" type="button" data-target="#carouselWatchAgain"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+
+            <!-- New Releases -->
+            <div class="section-title mt-5 mb-1">
+                <h5 class="d-inline-block align-baseline mb-3">New Releases</h5>
+            </div>
+    
+            <div id="carouselNewReleases" class="carousel slide d-none d-sm-block" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- carrousel item active -->
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 mx-n1">
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\7.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\8.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\9.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\10.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\11.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\12.png" class="img-fluid rounded w-100" alt="movie">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- carrousel item -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 mx-n1">
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\13.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\14.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\15.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\16.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\17.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                            <div class="col px-1 mb-2 mb-md-0">
+                                <img src="assets\movies\18.png" class="img-fluid rounded w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            
+                <button class="carousel-control-prev" type="button" data-target="#carouselNewReleases"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+            
+                <button class="carousel-control-next" type="button" data-target="#carouselNewReleases"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
             
         </div>
     </main>
+
+<!-- Footer -->
+<footer class="page-footer mt-4">
+    <div class="container">
+        <div class="row py-4" id="footer-icons">
+            <div class="col-md-6 col-lg-5 text-md-left mb-4 mb-md-0 ml-5">
+                <a class="facebook">
+                    <i class="bi bi-facebook white-text mr-4"></i>
+                </a>
+                <a class="instagram">
+                    <i class="bi bi-instagram white-text mr-4"></i>
+                </a>
+                <a class="twitter">
+                    <i class="bi bi-twitter white-text mr-4"></i>
+                </a>
+                <a class="youtube">
+                    <i class="bi bi-youtube white-text"></i>
+                </a>
+                
+            </div>
+  
+        </div>
+
+
+        <div class="row mt-3 text-secondary" id="footer-links">
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+              <!-- Links -->
+              <p>
+                <a class="text-secondary" href="#!">Audio and Substitles</a>
+              </p>
+              <p>
+                <a class="text-secondary" href="#!">Media Center</a>
+              </p>
+              <p>
+                <a class="text-secondary" href="#!">Privacy</a>
+              </p>
+              <p>
+                <a class="text-secondary" href="#!">Contact Us</a>
+              </p>
+      
+            </div>
+            
+      
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+             
+              <p>
+                <a class="text-secondary" href="#!">Audio Description</a>
+              </p>
+              <p>
+                <a class="text-secondary" href="#!">Investor Relations</a>
+              </p>
+              <p>
+                <a class="text-secondary" href="#!">Legal Notices</a>
+              </p>
+           
+      
+            </div>
+            
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+                
+                <p>
+                  <a class="text-secondary" href="#!">Help Center</a>
+                </p>
+                <p>
+                  <a class="text-secondary" href="#!">Jobs</a>
+                </p>
+                <p>
+                  <a class="text-secondary" href="#!">Cookie Preferences</a>
+                </p>
+               
+        
+            </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+                <!-- Links -->
+                <p>
+                  <a class="text-secondary" href="#!">Gift Cards</a>
+                </p>
+                <p>
+                  <a class="text-secondary" href="#!">Terms of Use</a>
+                </p>
+                <p>
+                  <a class="text-secondary" href="#!">Corporate Information</a>
+                </p>
+        
+            </div>
+              <!-- Grid column -->
+    
+          </div>
+
+          <div class="row mt-3">
+            <div class="col  ml-5 mb-4 sm-ml-1 service-code">
+                <a class="border border-secondary text-secondary py-2 px-2">
+                    Service Code
+                </a>
+            </div>
+          </div>
+
+
+          <div class="row mt-3  ">
+            <div class="col  ml-5 mb-4">
+                <div class="footer-copyright text-secondary">© 1997 - 2022 Netflix, inc.
+                </div>
+              </div>
+          </div>
+
+
+
+    </div>
+
+  </footer>
 
 
 

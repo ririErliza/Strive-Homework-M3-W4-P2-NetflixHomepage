@@ -13,6 +13,8 @@ body {
     color: rgb(241, 241, 241);
   }
 
+
+/* nav*/
 ul.nav li i{
   font-size: 10px;
 }
@@ -21,16 +23,37 @@ ul.nav li i{
 /* carousel */
 @media (min-width: 768px) {
   #carouselTrending .carousel-control-prev,
-  #carouselTrending .carousel-control-next {
-    width: 15px;
-    opacity: 0.4;
+  #carouselTrending .carousel-control-next,
+  #carouselWatchAgain .carousel-control-prev,
+  #carouselWatchAgain .carousel-control-next,
+  #carouselNewReleases .carousel-control-prev,
+  #carouselNewReleases .carousel-control-next {
+    width: 17px;
+    
   }
 
-  #carouselTrending .carousel-control-prev {
-    left: -12px;
+  #carouselTrending .carousel-control-prev,
+  #carouselWatchAgain .carousel-control-prev,
+  #carouselNewReleases .carousel-control-prev {
+    left: -4px;
+    opacity: 0;
   }
 
-  #carouselTrending .carousel-control-next {
-    right: -12px;
+  #carouselTrending .carousel-control-next,
+  #carouselWatchAgain .carousel-control-next,
+  #carouselNewReleases .carousel-control-next{
+    right: -8px;
+    opacity: 0.3;
   }
+}
+
+/* footer */
+
+#footer-icons a i{
+  font-size: 35px;
+  color:grey;
+}
+
+#footer-links p a, .service-code, .footer-copyright{
+  font-size: 0.8em;
 }
