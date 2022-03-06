@@ -5,6 +5,9 @@ body {
     background-color: #0f171e;
     font-family: 'Roboto', sans-serif;
   }
+
+
+  /* navbar*/
 .bg-nav-dark {
     background-color: #0f171e;
   }
@@ -20,8 +23,56 @@ ul.nav li i{
 }
 
 
-/* carousel */
+/* footer */
+
+#footer-icons a i{
+  font-size: 35px;
+  color:grey;
+}
+
+#footer-links p a, .service-code, .footer-copyright{
+  font-size: 0.8em;
+}
+
+/* animation */
+nav, ul.nav, main #trendingFade, main #watchItFade, main #newReleaseFade, footer{
+  animation: fade-in 1s backwards;
+}
+
+nav{
+  animation-delay: 0.1s;
+}
+
+ul.nav{
+  animation-delay: 0.3s;
+}
+main #trendingFade{
+  animation-delay: 0.5s;
+} 
+main #watchItFade{
+  animation-delay: 0.7s;
+}
+main #newReleaseFade{
+  animation-delay: 0.9s;
+}
+footer{
+  animation-delay: 1s;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* responsive*/
+
 @media (min-width: 768px) {
+  /* carousel */
   #carouselTrending .carousel-control-prev,
   #carouselTrending .carousel-control-next,
   #carouselWatchAgain .carousel-control-prev,
@@ -47,13 +98,23 @@ ul.nav li i{
   }
 }
 
-/* footer */
+@media (max-width: 576px) {
+  /* carousel */
+  #carouselTrending .carousel-control-prev,
+  #carouselTrending .carousel-control-next,
+  #carouselWatchAgain .carousel-control-prev,
+  #carouselWatchAgain .carousel-control-next,
+  #carouselNewReleases .carousel-control-prev,
+  #carouselNewReleases .carousel-control-next {
+    opacity: 0;
+  }
+  /* navbar */
+ .no-display{
+   display: none;
+ }
+  /* nav */
+  ul.nav li i{
+    display: none;
+  }
 
-#footer-icons a i{
-  font-size: 35px;
-  color:grey;
-}
-
-#footer-links p a, .service-code, .footer-copyright{
-  font-size: 0.8em;
 }
